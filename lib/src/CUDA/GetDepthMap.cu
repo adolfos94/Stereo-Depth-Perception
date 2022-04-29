@@ -23,7 +23,7 @@ __global__ void GetDepthMap_GPU(
 
 		if (segmentIDX > 0)
 		{
-			if (costSegments[segmentIDX] > 0)
+			if (costSegments[segmentIDX] >= 0)
 			{
 				for (int d = 0; d < MaxDisparity; ++d)
 				{
